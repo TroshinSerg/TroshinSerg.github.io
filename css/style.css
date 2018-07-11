@@ -2446,13 +2446,14 @@ input[type='radio'][disabled]:checked + label:focus::before {
 }
 
 .modal-map {
-    position: absolute;
-    bottom: 357px;
+    position: fixed;
+    top: 50%;
     left: 50%;
 
     width: 940px;
     height: 446px;
-    margin-left: -470px;
+
+    transform: translate(-50%, -50%);
 
     background-color: #565656;
     background-image: url('../img/map-large.jpg');
@@ -2479,14 +2480,15 @@ input[type='radio'][disabled]:checked + label:focus::before {
     font-size: 18px;
     line-height: 18px;
 
-    position: absolute;
+    position: fixed;
     z-index: 3;
-    bottom: 200px;
+    top: 50%;
     left: 50%;
 
     width: 620px;
-    margin-left: -310px;
     padding: 47px 80px 37px;
+
+    transform: translate(-50%, -50%);
 
     color: #000;
     border-top: 7px solid #ff5257;
