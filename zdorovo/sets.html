@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Есть здорово! Персональный набор здоровой еды</title>
+    <link rel="preload" href="fonts/lato-black.woff2" as="font">
+    <link rel="preload" href="fonts/lato-medium.woff2" as="font">
+    <link rel="preload" href="fonts/lato-regular.woff2" as="font">
+    <link rel="preload" href="fonts/neris-light.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page">
+    <h1 class="visually-hidden">Здоровая еда Елены Малышевой</h1>
+    <header class="page__header main-header">
+      <div class="main-header__inner">
+        <div class="main-header__callback">
+          <p class="main-header__phone">+7 495 678 47 54</p>
+          <a class="main-header__callback-link" href="#">обратный звонок</a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </div>
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source type="image/webp" media="(min-width: 1230px)" srcset="img/logo-1@1x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-1@1x.webp">
+            <source type="image/webp" srcset="img/logo-1@1x.webp">
+            <source media="(min-width: 1230px)" srcset="img/logo-1@1x.png">
+            <source media="(min-width: 768px)" srcset="img/logo-1@1x.png">
+            <img class="logo__image" src="img/logo-1@1x.png" alt="Здоровая еда Елены Малышевой">
+          </picture>
+        </a>
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list main-nav__list--cabinet">
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--cabinet" href="registration.html">Личный кабинет</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--orders" href="my-orders.html">Мои заказы</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--cart" href="cart.html">Корзина</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--site">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="sets.html">Выбрать набор</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О компании</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Что это такое?</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Почему мы?</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Вопрос-ответ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__contacts short-contacts">
+          <p class="short-contacts__phone short-contacts__phone--header">+7 495 678 47 54</p>
+          <p class="short-contacts__worktime short-contacts__worktime--header">Ежедневно с 10:00 до 22:00</p>
+          <a class="short-contacts__link-email short-contacts__link-email--header" href="mailto:test@yandex.ru">Написать сообщение</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="sets">
+        <h1 class="visually-hidden">Выбрать набор - персональный</h1>
+        <nav class="sets__nav">
+          <a class="sets__nav-link sets__nav-link--basic" href="sets-basic.html">Стандартный набор здоровой еды</a>
+          <a class="sets__nav-link sets__nav-link--personal sets__nav-link--current">Персональный набор здоровой еды</a>
+        </nav>
+        <section class="set">
+          <div class="set__inner">
+            <div class="set__info">
+              <h2 class="set__heading set__heading--personal">Персональный набор здоровой еды</h2>
+              <p class="set__description">В базовом даборе еды мы сами подобрали для вас оптимальный набор блюд по калорийности и насыщенности полезными элементами. Ваша задача только выбрать продолжительность набора и его каллорийность и получить свою коробку здоровой еды!</p>
+            </div>
+            <form class="set__form" action="https://echo.htmlacademy.ru" method="post">
+              <ul class="set__fields" role="none">
+                <li class="set__field-wrapper">
+                  <label class="set__label">
+                    Период
+                    <select class="set__select field field--select" name="period">
+                      <option value="two-weeks">2 недели</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="set__field-wrapper">
+                  <label class="set__label">
+                    Каллорийность дня
+                    <select class="set__select field field--select" name="calorific">
+                      <option value="man-1500kk">Мужской (1500 Ккал)</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="set__field-wrapper">
+                  <label class="set__label">
+                    Тип меню
+                    <select class="set__select field field--select" name="menu-type">
+                      <option value="easy">Меню «Легкое»</option>
+                      <option value="nutritious">Меню «Питательное»</option>
+                    </select>
+                  </label>
+                </li>
+              </ul>
+              <div class="set__form-footer">
+                <p class="set__price">
+                  <span class="set__price-num">2 400 р.</span>
+                  в день
+                </p>
+                <p class="set__price">
+                  <span class="set__price-num">12 400 р.</span>
+                  за программу
+                </p>
+                <button class="set__form-btn btn btn--green" type="submit">Подтвердить!</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="set-menu">
+          <div class="set-menu__inner">
+            <h2 class="visually-hidden">Выбор блюд меню</h2>
+            <p class="set-menu__description">Теперь собрать свое собственное меню стало очень просто! <br>Переключайтесь между неделями, чтобы составить разнообразное меню. Перелистывайте блюда внутри каждого приема пищи и выбирайте понравившееся. Или откройте весь списк наших блюд и выберите из них. <br>Также вы можете сохранить настройки своего персональногонабора в «Мои заказы» и вернуться к редактированию позже.</p>
+            <div class="set-menu__weeks-nav">
+              <button class="set-menu__weeks-btn btn btn--border-green" type="button">1-я неделя</button>
+              <button class="set-menu__weeks-btn set-menu__weeks-btn--current btn btn--green" type="button" disabled="">2-я неделя</button>
+            </div>
+          </div>
+        </section>
+        <section class="set-week">
+          <div class="set-week__inner">
+            <h2 class="visually-hidden">Вторая неделя</h2>
+            <div class="set-week__days">
+                <button class="set-week__btn set-week__btn--current btn btn--red" type="button">1 день</button>
+                <button class="set-week__btn btn btn--border-red" type="button">2 день</button>
+                <button class="set-week__btn btn btn--border-red" type="button">3 день</button>
+                <button class="set-week__btn btn btn--border-red" type="button">4 день</button>
+                <button class="set-week__btn btn btn--border-red" type="button">5 день</button>
+                <button class="set-week__btn btn btn--border-red" type="button">6 день</button>
+                <button class="set-week__btn btn btn--border-red" type="button">7 день</button>
+            </div>
+            <form class="set-week__form" action="https://echo.htmlacademy.ru" method="post">
+              <section class="set-day set-day--current">
+                <h2 class="visually-hidden">Меню на 1-й день</h2>
+                <ul class="set-day__menu-list">
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">Завтрак</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-1@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-1@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__breakfast--food-1" type="checkbox" name="day-1__breakfast--food-1" value="day-1__breakfast--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__breakfast--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-2@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-2@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__breakfast--food-2" type="checkbox" name="day-1__breakfast--food-2" value="day-1__breakfast--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__breakfast--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-3@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-3@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__breakfast--food-3" type="checkbox" name="day-1__breakfast--food-3" value="day-1__breakfast--food-3">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__breakfast--food-3">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">2-й завтрак</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-2@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-2@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__breakfast-2--food-1" type="checkbox" name="day-1__breakfast-2--food-1" value="day-1__breakfast-2--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__breakfast-2--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-3@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-3@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__breakfast-2--food-2" type="checkbox" name="day-1__breakfast-2--food-2" value="day-1__breakfast-2--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__breakfast-2--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-1@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-1@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__breakfast-2--food-3" type="checkbox" name="day-1__breakfast-2--food-3" value="day-1__breakfast-2--food-3">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__breakfast-2--food-3">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">Обед</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-3@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-3@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__lunch--food-1" type="checkbox" name="day-1__lunch--food-1" value="day-1__lunch--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__lunch--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-4@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-4@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__lunch--food-2" type="checkbox" name="day-1__lunch--food-2" value="day-1__lunch--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__lunch--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">Полдник</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-4@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-4@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__snack--food-1" type="checkbox" name="day-1__snack--food-1" value="day-1__snack--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__snack--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-5@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-5@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__snack--food-2" type="checkbox" name="day-1__snack--food-2" value="day-1__snack--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__snack--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">Ужин</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-5@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-5@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__supper--food-1" type="checkbox" name="day-1__supper--food-1" value="day-1__supper--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__supper--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-2@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-2@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-1__supper--food-2" type="checkbox" name="day-1__supper--food-2" value="day-1__supper--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-1__supper--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                </ul><!-- /.set-day__food-list-->
+                <div class="set-day__calorific">
+                  <p class="set-day__calorific-amount">Средняя калорийность дня соответсвует выбранному набору: <span>1600</span> Ккал!</p>
+                  <p class="set-day__calorific-text">Подтвердите свой выбор и переходите к заказу!</p>
+                </div>
+              </section>
+
+              <section class="set-day">
+                <h2 class="visually--hidden">Меню на 2-й день</h2>
+                <ul class="set-day__menu-list">
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">Завтрак</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-1@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-1@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__breakfast--food-1" type="checkbox" name="day-2__breakfast--food-1" value="day-2__breakfast--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__breakfast--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-2@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-2@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__breakfast--food-2" type="checkbox" name="day-2__breakfast--food-2" value="day-2__breakfast--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__breakfast--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-3@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-3@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__breakfast--food-3" type="checkbox" name="day-2__breakfast--food-3" value="day-2__breakfast--food-3">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__breakfast--food-3">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">2-й завтрак</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-2@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-2@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__breakfast-2--food-1" type="checkbox" name="day-2__breakfast-2--food-1" value="day-2__breakfast-2--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__breakfast-2--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-3@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-3@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__breakfast-2--food-2" type="checkbox" name="day-2__breakfast-2--food-2" value="day-2__breakfast-2--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__breakfast-2--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-1@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-1@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__breakfast-2--food-3" type="checkbox" name="day-2__breakfast-2--food-3" value="day-2__breakfast-2--food-3">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__breakfast-2--food-3">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">Обед</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-3@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-3@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__lunch--food-1" type="checkbox" name="day-2__lunch--food-1" value="day-2__lunch--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__lunch--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-4@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-4@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__lunch--food-2" type="checkbox" name="day-2__lunch--food-2" value="day-2__lunch--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__lunch--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">Полдник</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-4@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-4@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__snack--food-1" type="checkbox" name="day-2__snack--food-1" value="day-2__snack--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__snack--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-5@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-5@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__snack--food-2" type="checkbox" name="day-2__snack--food-2" value="day-2__snack--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__snack--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                  <li class="set-day__item">
+                    <h3 class="set-day__title">Ужин</h3>
+                    <div class="set-day__food-list owl-carousel js-food-list">
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-5@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-5@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__supper--food-1" type="checkbox" name="day-2__supper--food-1" value="day-2__supper--food-1">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__supper--food-1">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                      <div class="set-day__food-item">
+                        <h4 class="set-day__food-title">Блинчики из гречневой муки с ягодным муссом</h4>
+                        <div class="set-day__food-image-wrapper">
+                          <picture>
+                            <source type="image/webp" srcset="img/food-thumb-2@1x.webp">
+                            <img class="set-day__food-image" src="img/food-thumb-2@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                          </picture>
+                        </div>
+                        <ul class="set-day__food-info">
+                          <li class="set-day__food-nutrition">
+                            Б
+                            <span class="set-day__food-num">17</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Ж
+                            <span class="set-day__food-num">6</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            У
+                            <span class="set-day__food-num">49</span>
+                          </li>
+                          <li class="set-day__food-nutrition">
+                            Кк
+                            <span class="set-day__food-num set-day__food-num--red">318</span>
+                          </li>
+                        </ul>
+                        <div class="set-day__food-buttons">
+                          <input class="set-day__checkbox visually-hidden" id="day-2__supper--food-2" type="checkbox" name="day-2__supper--food-2" value="day-2__supper--food-2">
+                          <label class="set-day__food-btn set-day__food-btn--save btn btn--green btn--small" for="day-2__supper--food-2">Сохранить</label>
+                          <a class="set-day__food-btn set-day__food-btn--all btn btn--red btn--small" href="#">Все блюда</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+
+                </ul><!-- /.set-day__food-list-->
+                <div class="set-day__calorific set-day__calorific--warning">
+                  <p class="set-day__calorific-amount">Вы выбрали необходимое количество блюд, но средняя калорийность дня очень низкая: <span>502</span> Ккал!</p>
+                  <p class="set-day__calorific-text">Попробуйте заменить некоторые блюда на более калорийные самостоятельно в разделе подора блюд или воспользуйтесь автоматической заменой.</p>
+                </div>
+                <div class="set-day__replacement">
+                  <div class="set-day__replacement-food">
+                    <h2 class="set-day__food-title set-day__food-title--big">Блинчики из гречневой муки с ягодным муссом</h2>
+                    <div class="set-day__food-image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/food-thumb-1@1x.webp">
+                        <img class="set-day__food-image" src="img/food-thumb-1@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                      </picture>
+                    </div>
+                    <ul class="set-day__food-info">
+                      <li class="set-day__food-nutrition">
+                        Б
+                        <span class="set-day__food-num">17</span>
+                      </li>
+                      <li class="set-day__food-nutrition">
+                        Ж
+                        <span class="set-day__food-num">6</span>
+                      </li>
+                      <li class="set-day__food-nutrition">
+                        У
+                        <span class="set-day__food-num">49</span>
+                      </li>
+                      <li class="set-day__food-nutrition">
+                        Кк
+                        <span class="set-day__food-num set-day__food-num--red">318</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="set-day__confirmation">
+                    <p class="set-day__replacement-text">Заменить блюдо из завтрака?</p>
+                    <a class="set-day__replacement-btn btn btn--red" href="#">Нет</a>
+                    <a class="set-day__replacement-btn btn btn--green" href="#">Да</a>
+                  </div>
+                  <div class="set-day__replacement-food">
+                    <h2 class="set-day__food-title set-day__food-title--big">Запеканка гречневая с творогом и курагой</h2>
+                    <div class="set-day__food-image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/food-thumb-2@1x.webp">
+                        <img class="set-day__food-image" src="img/food-thumb-2@1x.jpg" alt="Фото блинчиков из гречневой муки">
+                      </picture>
+                    </div>
+                    <ul class="set-day__food-info">
+                      <li class="set-day__food-nutrition">
+                        Б
+                        <span class="set-day__food-num">17</span>
+                      </li>
+                      <li class="set-day__food-nutrition">
+                        Ж
+                        <span class="set-day__food-num">6</span>
+                      </li>
+                      <li class="set-day__food-nutrition">
+                        У
+                        <span class="set-day__food-num">49</span>
+                      </li>
+                      <li class="set-day__food-nutrition">
+                        Кк
+                        <span class="set-day__food-num set-day__food-num--red">318</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section class="set-day">
+                <h2>Меню на 3-й день</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta labore quas placeat nostrum quos perferendis, dolorum consequuntur repellat maiores quisquam atque cupiditate fugiat distinctio, facere quae consectetur totam officia.</p>
+              </section>
+
+              <section class="set-day">
+                <h2>Меню на 4-й день</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta labore quas placeat nostrum quos perferendis, dolorum consequuntur repellat maiores quisquam atque cupiditate fugiat distinctio, facere quae consectetur totam officia.</p>
+              </section>
+
+              <section class="set-day">
+                <h2>Меню на 5-й день</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta labore quas placeat nostrum quos perferendis, dolorum consequuntur repellat maiores quisquam atque cupiditate fugiat distinctio, facere quae consectetur totam officia.</p>
+              </section>
+
+              <section class="set-day">
+                <h2>Меню на 6-й день</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta labore quas placeat nostrum quos perferendis, dolorum consequuntur repellat maiores quisquam atque cupiditate fugiat distinctio, facere quae consectetur totam officia.</p>
+              </section>
+
+              <section class="set-day">
+                <h2>Меню на 7-й день</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta labore quas placeat nostrum quos perferendis, dolorum consequuntur repellat maiores quisquam atque cupiditate fugiat distinctio, facere quae consectetur totam officia.</p>
+              </section>
+
+              <div class="set-week__form-footer">
+                <a class="set-week__form-btn btn btn--red" href="#">Сохранить в мои заказы</a>
+                <button class="set-week__form-btn btn btn--green" type="submit">Оформить заказ!</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="page__footer main-footer">
+      <div class="main-footer__inner">
+        <a class="main-footer__logo logo" href="#">
+          <picture>
+            <source type="image/webp" srcset="img/logo-2@1x.webp">
+            <img class="logo__image logo__image--footer" src="img/logo-2@1x.png" alt="Логотип Есть здорово">
+          </picture>
+        </a>
+        <div class="main-footer__menu">
+          <p class="main-footer__title">О здоровой еде</p>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Что это такое?</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Почему мы?</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Вопрос ответ</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">О компании</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__menu">
+          <p class="main-footer__title">Выберите и закажите</p>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Базовый набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Персональный набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Детский набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__short-contacts short-contacts">
+          <p class="main-footer__title main-footer__title--contacts">Свяжитесь с нами</p>
+          <p class="short-contacts__phone">+7 495 678 47 54</p>
+          <p class="short-contacts__worktime">Ежедневно с 10:00 до 22:00</p>
+          <a class="short-contacts__link-email" href="mailto:test@yandex.ru">Написать сообщение</a>
+        </div>
+        <p class="main-footer__copyright">Все права защищены. © 2018</p>
+      </div>
+    </footer>
+    <div class="page__overlay"></div>
+    <section class="modal modal--all-foods">
+      <div class="modal__inner js-scroll" data-scrollbar="">
+        <h2 class="visually-hidden">Список всех блюд</h2>
+        <ul class="all-foods">
+          <li class="all-foods__item">
+            <div class="all-foods__content">
+              <h3 class="all-foods__heading">Запеканка гречневая с творогом и курагой</h3>
+              <ul class="all-foods__food-info">
+                <li class="all-foods__bgu">
+                  Б
+                  <span class="all-foods__bgu-span">17</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Ж
+                  <span class="all-foods__bgu-span">6</span>
+                </li>
+                <li class="all-foods__bgu">
+                  У
+                  <span class="all-foods__bgu-span">49</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Кк
+                  <span class="all-foods__bgu-span">318</span>
+                </li>
+              </ul>
+            </div>
+            <div class="all-foods__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/food-thumb-1@1x.webp">
+                <img class="all-foods__image" src="img/food-thumb-1@1x.jpg" alt="Фото Запеканка гречневая с творогом и курагой">
+              </picture>
+            </div>
+            <a class="all-foods__btn btn btn--green" href="#">Выбрать блюдо</a>
+          </li>
+          <li class="all-foods__item">
+            <div class="all-foods__content">
+              <h3 class="all-foods__heading">Запеканка гречневая с творогом и курагой</h3>
+              <ul class="all-foods__food-info">
+                <li class="all-foods__bgu">
+                  Б
+                  <span class="all-foods__bgu-span">17</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Ж
+                  <span class="all-foods__bgu-span">6</span>
+                </li>
+                <li class="all-foods__bgu">
+                  У
+                  <span class="all-foods__bgu-span">49</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Кк
+                  <span class="all-foods__bgu-span">318</span>
+                </li>
+              </ul>
+            </div>
+            <div class="all-foods__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/food-thumb-2@1x.webp">
+                <img class="all-foods__image" src="img/food-thumb-2@1x.jpg" alt="Фото Запеканка гречневая с творогом и курагой">
+              </picture>
+            </div>
+            <a class="all-foods__btn btn btn--green" href="#">Выбрать блюдо</a>
+          </li>
+          <li class="all-foods__item">
+            <div class="all-foods__content">
+              <h3 class="all-foods__heading">Запеканка гречневая с творогом и курагой</h3>
+              <ul class="all-foods__food-info">
+                <li class="all-foods__bgu">
+                  Б
+                  <span class="all-foods__bgu-span">17</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Ж
+                  <span class="all-foods__bgu-span">6</span>
+                </li>
+                <li class="all-foods__bgu">
+                  У
+                  <span class="all-foods__bgu-span">49</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Кк
+                  <span class="all-foods__bgu-span">318</span>
+                </li>
+              </ul>
+            </div>
+            <div class="all-foods__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/food-thumb-3@1x.webp">
+                <img class="all-foods__image" src="img/food-thumb-3@1x.jpg" alt="Фото Запеканка гречневая с творогом и курагой">
+              </picture>
+            </div>
+            <a class="all-foods__btn btn btn--green" href="#">Выбрать блюдо</a>
+          </li>
+          <li class="all-foods__item">
+            <div class="all-foods__content">
+              <h3 class="all-foods__heading">Запеканка гречневая с творогом и курагой</h3>
+              <ul class="all-foods__food-info">
+                <li class="all-foods__bgu">
+                  Б
+                  <span class="all-foods__bgu-span">17</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Ж
+                  <span class="all-foods__bgu-span">6</span>
+                </li>
+                <li class="all-foods__bgu">
+                  У
+                  <span class="all-foods__bgu-span">49</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Кк
+                  <span class="all-foods__bgu-span">318</span>
+                </li>
+              </ul>
+            </div>
+            <div class="all-foods__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/food-thumb-4@1x.webp">
+                <img class="all-foods__image" src="img/food-thumb-4@1x.jpg" alt="Фото Запеканка гречневая с творогом и курагой">
+              </picture>
+            </div>
+            <a class="all-foods__btn btn btn--green" href="#">Выбрать блюдо</a>
+          </li>
+          <li class="all-foods__item">
+            <div class="all-foods__content">
+              <h3 class="all-foods__heading">Запеканка гречневая с творогом и курагой</h3>
+              <ul class="all-foods__food-info">
+                <li class="all-foods__bgu">
+                  Б
+                  <span class="all-foods__bgu-span">17</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Ж
+                  <span class="all-foods__bgu-span">6</span>
+                </li>
+                <li class="all-foods__bgu">
+                  У
+                  <span class="all-foods__bgu-span">49</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Кк
+                  <span class="all-foods__bgu-span">318</span>
+                </li>
+              </ul>
+            </div>
+            <div class="all-foods__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/food-thumb-5@1x.webp">
+                <img class="all-foods__image" src="img/food-thumb-5@1x.jpg" alt="Фото Запеканка гречневая с творогом и курагой">
+              </picture>
+            </div>
+            <a class="all-foods__btn btn btn--green" href="#">Выбрать блюдо</a>
+          </li>
+          <li class="all-foods__item">
+            <div class="all-foods__content">
+              <h3 class="all-foods__heading">Запеканка гречневая с творогом и курагой</h3>
+              <ul class="all-foods__food-info">
+                <li class="all-foods__bgu">
+                  Б
+                  <span class="all-foods__bgu-span">17</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Ж
+                  <span class="all-foods__bgu-span">6</span>
+                </li>
+                <li class="all-foods__bgu">
+                  У
+                  <span class="all-foods__bgu-span">49</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Кк
+                  <span class="all-foods__bgu-span">318</span>
+                </li>
+              </ul>
+            </div>
+            <div class="all-foods__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/food-thumb-1@1x.webp">
+                <img class="all-foods__image" src="img/food-thumb-1@1x.jpg" alt="Фото Запеканка гречневая с творогом и курагой">
+              </picture>
+            </div>
+            <a class="all-foods__btn btn btn--green" href="#">Выбрать блюдо</a>
+          </li>
+          <li class="all-foods__item">
+            <div class="all-foods__content">
+              <h3 class="all-foods__heading">Запеканка гречневая с творогом и курагой</h3>
+              <ul class="all-foods__food-info">
+                <li class="all-foods__bgu">
+                  Б
+                  <span class="all-foods__bgu-span">17</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Ж
+                  <span class="all-foods__bgu-span">6</span>
+                </li>
+                <li class="all-foods__bgu">
+                  У
+                  <span class="all-foods__bgu-span">49</span>
+                </li>
+                <li class="all-foods__bgu">
+                  Кк
+                  <span class="all-foods__bgu-span">318</span>
+                </li>
+              </ul>
+            </div>
+            <div class="all-foods__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/food-thumb-2@1x.webp">
+                <img class="all-foods__image" src="img/food-thumb-2@1x.jpg" alt="Фото Запеканка гречневая с творогом и курагой">
+              </picture>
+            </div>
+            <a class="all-foods__btn btn btn--green" href="#">Выбрать блюдо</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scrollbar.js"></script>
+    <script>
+      $(".js-food-list").owlCarousel({
+          loop:false,
+          dots:false,
+          nav:true,
+          margin:0,
+          items:1,
+          navText:["<",">"]
+      });
+
+      //Кастомный скролбар
+      var Scrollbar = window.Scrollbar;
+      Scrollbar.init(document.querySelector(".js-scroll"), {
+        "alwaysShowTracks": true
+      });
+
+      //
+      $("body").on("click", ".set-day__food-btn--save", function (evt) {
+        //при клике по кнопке добавляем/удаляем классы
+        $(this).addClass("set-day__food-btn--selected btn--border-green");
+        $(this).removeClass("set-day__food-btn--save btn--green");
+
+        //Меняем текст у кнопки "Сохранить"
+        $(this).text("Выбрано");
+
+        //при клике по кнопке "сохранить" ищем родителя и добавляем ему (карточка приема пищи) класс
+        $(this).closest(".set-day__item").addClass("set-day__item--selected");
+
+        //при клике по кнопке "Сохранить" добавляем/удаляем классы у кнопки "Все блюда"
+        $(this).siblings(".set-day__food-btn--all").addClass("set-day__food-btn--cancel btn--border-red");
+        $(this).siblings(".set-day__food-btn--cancel").removeClass("set-day__food-btn--all btn--red");
+
+        //Меняем текст у кнопки "Все блюда"
+        $(this).siblings(".set-day__food-btn--cancel").text("Изменить");
+      });
+
+      $("body").on("click", ".set-day__food-btn--cancel", function (evt) {
+        evt.preventDefault();
+        //при клике по кнопке добавляем/удаляем классы
+        $(this).addClass("set-day__food-btn--all btn--red");
+        $(this).removeClass("set-day__food-btn--cancel btn--border-red");
+
+        //Меняем текст у кнопки "Изменить"
+        $(this).text("Все блюда");
+
+        //при клике по кнопке "изменить" ищем родителя и удаляем у него (карточка приема пищи) класс
+        $(this).closest(".set-day__item").removeClass("set-day__item--selected");
+
+        //при клике по кнопке "изменить" добавляем/удаляем классы у кнопки "Выбрано"
+        $(this).siblings(".set-day__food-btn--selected").addClass("set-day__food-btn--save btn--green");
+        $(this).siblings(".set-day__food-btn--save").removeClass("set-day__food-btn--selected btn--border-green");
+
+        //Меняем текст у кнопки "Выбрано"
+        $(this).siblings(".set-day__food-btn--save").text("Сохранить");
+      });
+
+      $("body").on("click", ".set-menu__weeks-btn", function (evt) {
+        if (!$(this).hasClass("set-menu__weeks-btn--current")) {
+          $(this).siblings().removeClass("set-menu__weeks-btn--current btn--green").addClass("btn--border-green").removeAttr("disabled");
+          $(this).addClass("set-menu__weeks-btn--current btn--green").removeClass("btn--border-green").addAttr("disabled");
+        }
+      });
+
+      //Табы для переключения между днями
+      $(".set-week").on("click", ".set-week__btn", function (evt) {
+        var tabs = $(".set-week__btn"),
+            cont = $(".set-day");
+
+        // Удаляем классы --current
+        tabs.removeClass("set-week__btn--current").addClass("btn--border-red");
+        cont.removeClass("set-day--current");
+
+        // Добавляем классы --current
+        $(this).addClass("set-week__btn--current").addClass("btn--red");
+        $(this).removeClass("btn--border-red")
+        cont.eq($(this).index()).addClass("set-day--current");
+
+        return false;
+      });
+
+      //Показываем модальное окно со списком блюд
+      $("body").on("click", ".set-day__food-btn--all", function (evt) {
+        evt.preventDefault();
+        $(".scrollbar-track-x").attr("style", "display: block");
+        $(".scrollbar-track-y").attr("style", "display: block");
+        $(".modal").addClass("modal--show");
+        $(".page__overlay").addClass("page__overlay--show");
+      });
+
+      $("body").on("click", ".page__overlay", function (evt) {
+        $(".modal").removeClass("modal--show");
+        $(this).removeClass("page__overlay--show");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Есть здорово!</title>
+    <link rel="preload" href="fonts/lato-black.woff2" as="font">
+    <link rel="preload" href="fonts/lato-medium.woff2" as="font">
+    <link rel="preload" href="fonts/lato-regular.woff2" as="font">
+    <link rel="preload" href="fonts/neris-light.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page">
+    <header class="page__header main-header">
+      <div class="main-header__inner">
+        <div class="main-header__callback">
+          <p class="main-header__phone">+7 495 678 47 54</p>
+          <a class="main-header__callback-link" href="#">обратный звонок</a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </div>
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source type="image/webp" media="(min-width: 1230px)" srcset="img/logo-1@1x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-1@1x.webp">
+            <source type="image/webp" srcset="img/logo-1@1x.webp">
+            <source media="(min-width: 1230px)" srcset="img/logo-1@1x.png">
+            <source media="(min-width: 768px)" srcset="img/logo-1@1x.png">
+            <img class="logo__image" src="img/logo-1@1x.png" alt="Здоровая еда Елены Малышевой">
+          </picture>
+        </a>
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list main-nav__list--cabinet">
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--cabinet" href="registration.html">Личный кабинет</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--orders" href="my-orders.html">Мои заказы</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cabinet main-nav__item--current">
+              <a class="main-nav__link main-nav__link--cart">Корзина</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--site">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="sets.html">Выбрать набор</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О компании</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Что это такое?</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Почему мы?</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Вопрос-ответ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__contacts short-contacts">
+          <p class="short-contacts__phone short-contacts__phone--header">+7 495 678 47 54</p>
+          <p class="short-contacts__worktime short-contacts__worktime--header">Ежедневно с 10:00 до 22:00</p>
+          <a class="short-contacts__link-email short-contacts__link-email--header" href="mailto:test@yandex.ru">Написать сообщение</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="page__cart cart">
+        <section class="cart__orders">
+          <h1 class="cart__heading heading">Корзина</h1>
+          <div class="cart__order order">
+            <ul class="order__list">
+              <li class="cart__order-item order__item">
+                <div class="order__item-header order__item-header--basic">
+                  <h3 class="order__item-heading order__item-heading--cart">Стандартный набор здоровой еды</h3>
+                  <p class="order__item-info order__item-info--cart">
+                    <span class="order__item-period">2 неделя</span>
+                    <span class="order__item-calories">1600 Ккал</span>
+                  </p>
+                  <p class="order__item-price">13 300 <span class="order__item-currency">руб.</span></p>
+                </div>
+                <div class="order__item-content" data-scrollbar="">
+                  <div class="order__item-weeks-toggle">
+                    <button class="order__item-btn order__item-btn--current btn btn--small btn--border-green">1-я неделя</button>
+                    <button class="order__item-btn order__item-btn btn btn--small btn--green">2-я неделя</button>
+                  </div>
+                  <section class="order__item-week order__item-week--current">
+                    <h3 class="visually-hidden">1-я неделя</h3>
+                    <ul class="order__days">
+                      <li class="order__day">
+                        <p class="order__day-title">1 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">2 день - <b>1334 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">3 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">4 день - <b>1334 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">5 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">6 день - <b>1334 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">7 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section class="order__item-week">
+                    ////////////////<!--  <-- удалить-->
+                    <h3 class="visually-hidden">2-я неделя</h3>
+                    <ul class="order__days">
+                      <li class="order__day">
+                        <p class="order__day-title">1 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">2 день - <b>1334 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">3 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">4 день - <b>1334 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">5 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">6 день - <b>1334 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">7 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="order__item-footer">
+                  <a class="order__item-link order__item-link--edit" href="#">Редактировать</a>
+                  <a class="order__item-link order__item-link--remove" href="#">Удалить</a>
+                  <button class="order__item-toggle  order__item-toggle--cart" type="button">Развернуть</button>
+                </div>
+              </li>
+              <li class="cart__order-item order__item">
+                <div class="order__item-header order__item-header--personal">
+                  <h3 class="order__item-heading order__item-heading--cart">Персональный набор здоровой еды</h3>
+                  <p class="order__item-info order__item-info--cart">
+                    <span class="order__item-period">1 неделя</span>
+                    <span class="order__item-calories">1600 Ккал</span>
+                  </p>
+
+                  <p class="order__item-price">13 300 <span class="order__item-currency">руб.</span></p>
+                </div>
+                <div class="order__item-content" data-scrollbar="">
+                  <section class="order__item-week order__item-week--current">
+                    <h3 class="visually-hidden">1-я неделя</h3>
+                    <ul class="order__days">
+                      <li class="order__day">
+                        <p class="order__day-title">1 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">2 день - <b>1334 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">3 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">4 день - <b>1334 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">5 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">6 день - <b>1334 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li class="order__day">
+                        <p class="order__day-title">7 день - <b>1234 Ккал</b></p>
+
+                        <ul class="order__foods order__foods--cart">
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast">Завтрак</p>
+                            <p class="order__food-title">Запеканка творожная с курагой и изюмом</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--breakfast-2">Второй завтрак</p>
+                            <p class="order__food-title">Ореховая смесь «Экзотика»</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--lunch">Обед</p>
+                            <p class="order__food-title">Биточки куриные с картофельным пюре</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--snack">Десерт</p>
+                            <p class="order__food-title">Суфле в шоколаде с черной смородиной</p>
+                          </li>
+                          <li class="order__food order__food--cart">
+                            <p class="order__mealtime order__mealtime--supper">Ужин</p>
+                            <p class="order__food-title">Треска под соусом «Песто» с рисом</p>
+                          </li>
+                        </ul>
+
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="order__item-footer">
+                  <a class="order__item-link order__item-link--edit" href="#">Редактировать</a>
+                  <a class="order__item-link order__item-link--remove" href="#">Удалить</a>
+                  <button class="order__item-toggle order__item-toggle--cart" type="button">Развернуть</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a class="cart__button btn btn--green" href="#">Выбрать еще один набор</a>
+        </section>
+        <section class="cart__making-order">
+          <h2 class="cart__heading heading">Оформление заказа</h2>
+          <form class="cart__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="cart__fieldset">
+              <legend class="cart__legend">Получатель</legend>
+              <ul class="cart__fields">
+                <li class="cart__field-wrapper">
+                  <label class="cart__label" aria-label="E-mail">
+                    <input class="cart__field field" type="email" name="E-mail" placeholder="E-mail">
+                  </label>
+                </li>
+                <li class="cart__field-wrapper">
+                  <label class="cart__label" aria-label="Телефон">
+                    <input class="cart__field field" type="tel" name="phone" placeholder="Телефон">
+                  </label>
+                </li>
+                <li class="cart__field-wrapper">
+                  <label class="cart__label" aria-label="Имя и фамилия">
+                    <input class="cart__field field" type="text" name="name" placeholder="Имя и фамилия">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="cart__fieldset">
+              <legend class="cart__legend">Доставка</legend>
+              <ul class="cart__fields">
+                <li class="cart__field-wrapper">
+                  <label class="cart__label" aria-label="Город">
+                    <input class="cart__field field" type="text" name="city" placeholder="Город">
+                  </label>
+                </li>
+                <li class="cart__field-wrapper">
+                  <label class="cart__label" aria-label="Адрес доставки">
+                    <input class="cart__field field" type="text" name="address" placeholder="Адрес доставки">
+                  </label>
+                </li>
+                <li class="cart__field-wrapper">
+                  <label class="cart__label" aria-label="Квартира/офис">
+                    <input class="cart__field field" type="number" min="1" name="apartment" placeholder="Квартира/офис">
+                  </label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--full-length">
+                  <label class="cart__label" aria-label="Комментарий для курьера">
+                    <textarea class="cart__field field field--textarea" name="comment" placeholder="Комментарий для курьера"></textarea>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="cart__fieldset">
+              <legend class="cart__legend">Дата доставки</legend>
+              <ul class="cart__fields">
+                <li class="cart__field-wrapper cart__field-wrapper--full-length">
+                  <label class="cart__label">
+                    <select class="cart__field field field--select" name="delivery-date">
+                      <option value="september-27">27 сентября, в четверг, с 10:00 до 20:00</option>
+                      <option value="september-28">28 сентября, в пятницу, с 10:00 до 20:00</option>
+                    </select>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="cart__fieldset">
+              <legend class="cart__legend">Оплата</legend>
+              <ul class="cart__fields">
+                <li class="cart__field-wrapper cart__field-wrapper--method">
+                  <input type="radio" class="cart__radio visually-hidden" id="method-1" name="payment-method" value="Онлайн банковской картой" checked="">
+                  <label class="cart__label cart__label--method cart__label--method-1" for="method-1" aria-label="Оплата онлайн банковской картой"></label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--method">
+                  <input type="radio" class="cart__radio visually-hidden" id="method-2" name="payment-method" value="При получении наличными или картой">
+                  <label class="cart__label cart__label--method cart__label--method-2" for="method-2" aria-label="Оплата при получении наличными или картой"></label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--method">
+                  <input type="radio" class="cart__radio visually-hidden" id="method-3" name="payment-method" value="СПАСИБО от Сбербанка">
+                  <label class="cart__label cart__label--method cart__label--method-3" for="method-3" aria-label="Оплата СПАСИБО от Сбербанка"></label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--method">
+                  <input type="radio" class="cart__radio visually-hidden" id="method-4" name="payment-method" value="Банковский перевод">
+                  <label class="cart__label cart__label--method cart__label--method-4" for="method-4" aria-label="Оплата банковским переводом"></label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--method">
+                  <input type="radio" class="cart__radio visually-hidden" id="method-5" name="payment-method" value="Сбербанк Онлайн">
+                  <label class="cart__label cart__label--method cart__label--method-5" for="method-5" aria-label="Оплата через Сбербанк Онлайн"></label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--method">
+                  <input type="radio" class="cart__radio visually-hidden" id="method-6" name="payment-method" value="PayPal">
+                  <label class="cart__label cart__label--method cart__label--method-6" for="method-6" aria-label="Оплата через PayPal"></label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--method">
+                  <input type="radio" class="cart__radio visually-hidden" id="method-7" name="payment-method" value="Яндекс.Деньги">
+                  <label class="cart__label cart__label--method cart__label--method-7" for="method-7" aria-label="Оплата яндекс деньгами"></label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--method">
+                  <input type="radio" class="cart__radio visually-hidden" id="method-8" name="payment-method" value="WebMoney">
+                  <label class="cart__label cart__label--method cart__label--method-8" for="method-8" aria-label="Оплата WebMoney"></label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--method">
+                  <input type="radio" class="cart__radio visually-hidden" id="method-9" name="payment-method" value="QIWI Wallet">
+                  <label class="cart__label cart__label--method cart__label--method-9" for="method-9" aria-label="Оплата QIWI Wallet"></label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="cart__fieldset">
+              <legend class="visually-hidden">Стоимость заказа</legend>
+              <ul class="cart__fields">
+                <li class="cart__field-wrapper cart__field-wrapper--full-length">
+                  <label class="cart__label cart__label--price">
+                    <span class="cart__price-text">Наборы</span>
+                    <input class="visually-hidden js-price" type="text" name="product-price" value="12 400" readonly="">
+                    <span class="cart__price-field js-value"></span>
+                    <span class="cart__currency">руб.</span>
+                  </label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--full-length">
+                  <label class="cart__label cart__label--price">
+                    <span class="cart__price-text">Доставка</span>
+                    <input class="visually-hidden js-price" type="text" name="delivery-price" value="965" readonly="">
+                    <span class="cart__price-field js-value"></span>
+                    <span class="cart__currency">руб.</span>
+                  </label>
+                </li>
+                <li class="cart__field-wrapper cart__field-wrapper--full-length">
+                  <label class="cart__label cart__label--total">
+                    <span class="cart__price-text"><b>Итого к оплате:</b></span>
+                    <input class="visually-hidden js-price" type="text" name="total-price" value="13 365" readonly="">
+                    <span class="cart__price-total js-value"></span>
+                    <span class="cart__currency">руб.</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="cart__button btn btn--green" type="submit">Подтвердить заказ!</button>
+          </form>
+        </section>
+      </article>
+    </main>
+    <footer class="page__footer main-footer">
+      <div class="main-footer__inner">
+        <a class="main-footer__logo logo" href="index.html">
+          <picture>
+            <source type="image/webp" srcset="img/logo-1@1x.webp">
+            <img class="logo__image logo__image--footer" src="img/logo-1@1x.png" alt="Логотип Есть здорово">
+          </picture>
+        </a>
+        <div class="main-footer__menu">
+          <p class="main-footer__title">О здоровой еде</p>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Что это такое?</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Почему мы?</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Вопрос ответ</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">О компании</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__menu">
+          <p class="main-footer__title">Выберите и закажите</p>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Базовый набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Персональный набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Детский набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__short-contacts short-contacts">
+          <p class="main-footer__title main-footer__title--contacts">Свяжитесь с нами</p>
+          <p class="short-contacts__phone">+7 495 678 47 54</p>
+          <p class="short-contacts__worktime">Ежедневно с 10:00 до 22:00</p>
+          <a class="short-contacts__link-email" href="mailto:test@yandex.ru">Написать сообщение</a>
+        </div>
+        <p class="main-footer__copyright">Все права защищены. © 2018</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/smooth-scrollbar.js"></script>
+    <script>
+      //Кастомный скролбар
+      var Scrollbar = window.Scrollbar;
+      Scrollbar.initAll({
+        "alwaysShowTracks": true
+      });
+
+      //
+      $(".cart__label .js-price").each(function () {
+        $(this).siblings(".js-value").text($(this).val());
+      });
+
+      //Детали заказа кнопка свернуть/развернуть, меняем текст кнопки
+      $(".order__item").on("click", ".order__item-toggle", function (evt) {
+        if ($(this).text() === "Развернуть") {
+          $(this).text("Свернуть");
+        } else {
+          $(this).text("Развернуть");
+        }
+        $(this).toggleClass("order__item-toggle--opened");
+        $(this).closest(".order__item").find(".order__item-content").toggleClass("order__item-content--opened");
+      });
+
+      //
+      $(".order__item-weeks-toggle").on("click", ".order__item-btn", function (evt) {
+        $(this).addClass("order__item-btn--current btn--border-green").removeClass("btn--green").siblings().removeClass("order__item-btn--current btn--border-green").addClass("btn--green");
+        $(this).closest(".order__item-content").find(".order__item-week").removeClass("order__item-week--current").eq($(this).index()).addClass("order__item-week--current");
+      });
+    </script>
+  </body>
+</html>

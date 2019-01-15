@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Есть здорово!</title>
+    <link rel="preload" href="fonts/lato-black.woff2" as="font">
+    <link rel="preload" href="fonts/lato-medium.woff2" as="font">
+    <link rel="preload" href="fonts/lato-regular.woff2" as="font">
+    <link rel="preload" href="fonts/neris-light.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page">
+    <header class="page__header main-header">
+      <div class="main-header__inner">
+        <div class="main-header__callback">
+          <p class="main-header__phone">+7 495 678 47 54</p>
+          <a class="main-header__callback-link" href="#">обратный звонок</a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </div>
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source type="image/webp" media="(min-width: 1230px)" srcset="img/logo-1@1x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-1@1x.webp">
+            <source type="image/webp" srcset="img/logo-1@1x.webp">
+            <source media="(min-width: 1230px)" srcset="img/logo-1@1x.png">
+            <source media="(min-width: 768px)" srcset="img/logo-1@1x.png">
+            <img class="logo__image" src="img/logo-1@1x.png" alt="Здоровая еда Елены Малышевой">
+          </picture>
+        </a>
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list main-nav__list--cabinet">
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--cabinet" href="registration.html">Личный кабинет</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--orders" href="my-orders.html">Мои заказы</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cabinet main-nav__item--current">
+              <a class="main-nav__link main-nav__link--cart">Корзина</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--site">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="sets.html">Выбрать набор</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О компании</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Что это такое?</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Почему мы?</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Вопрос-ответ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__contacts short-contacts">
+          <p class="short-contacts__phone short-contacts__phone--header">+7 495 678 47 54</p>
+          <p class="short-contacts__worktime short-contacts__worktime--header">Ежедневно с 10:00 до 22:00</p>
+          <a class="short-contacts__link-email short-contacts__link-email--header" href="mailto:test@yandex.ru">Написать сообщение</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="page__cart cart">
+        <h1 class="cart__heading heading heading--center">Корзина пока еще пуста</h1>
+        <p class="cart__message">
+          <a class="cart__link" href="registration.html">Войдите в личный кабинет:</a> там вы увидите предыдущие заказы и наборы, которые ещё не собрали до конца.<br>Или <a class="cart__link" href="#">зарегистрируйтесь</a>, чтобы мы сохраняли все ваши наборы
+        </p>
+      </article>
+    </main>
+    <footer class="page__footer main-footer">
+      <div class="main-footer__inner">
+        <a class="main-footer__logo logo" href="index.html">
+          <picture>
+            <source type="image/webp" srcset="img/logo-1@1x.webp">
+            <img class="logo__image logo__image--footer" src="img/logo-1@1x.png" alt="Логотип Есть здорово">
+          </picture>
+        </a>
+        <div class="main-footer__menu">
+          <p class="main-footer__title">О здоровой еде</p>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Что это такое?</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Почему мы?</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Вопрос ответ</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">О компании</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__menu">
+          <p class="main-footer__title">Выберите и закажите</p>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Базовый набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Персональный набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Детский набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__short-contacts short-contacts">
+          <p class="main-footer__title main-footer__title--contacts">Свяжитесь с нами</p>
+          <p class="short-contacts__phone">+7 495 678 47 54</p>
+          <p class="short-contacts__worktime">Ежедневно с 10:00 до 22:00</p>
+          <a class="short-contacts__link-email" href="mailto:test@yandex.ru">Написать сообщение</a>
+        </div>
+        <p class="main-footer__copyright">Все права защищены. © 2018</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/smooth-scrollbar.js"></script>
+    <script>
+      //Кастомный скролбар
+      var Scrollbar = window.Scrollbar;
+      Scrollbar.initAll({
+        "alwaysShowTracks": true
+      });
+
+      //
+      $(".cart__label .js-price").each(function () {
+        $(this).siblings(".js-value").text($(this).val());
+      });
+
+      //Детали заказа кнопка свернуть/развернуть, меняем текст кнопки
+      $(".order__item").on("click", ".order__item-toggle", function (evt) {
+        if ($(this).text() === "Развернуть") {
+          $(this).text("Свернуть");
+        } else {
+          $(this).text("Развернуть");
+        }
+        $(this).toggleClass("order__item-toggle--opened");
+        $(this).closest(".order__item").find(".order__item-content").toggleClass("order__item-content--opened");
+      });
+
+      //
+      $(".order__item-weeks-toggle").on("click", ".order__item-btn", function (evt) {
+        $(this).addClass("order__item-btn--current btn--border-green").removeClass("btn--green").siblings().removeClass("order__item-btn--current btn--border-green").addClass("btn--green");
+        $(this).closest(".order__item-content").find(".order__item-week").removeClass("order__item-week--current").eq($(this).index()).addClass("order__item-week--current");
+      });
+    </script>
+  </body>
+</html>

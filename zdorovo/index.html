@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Есть здорово!</title>
+    <link rel="preload" href="fonts/lato-black.woff2" as="font">
+    <link rel="preload" href="fonts/lato-medium.woff2" as="font">
+    <link rel="preload" href="fonts/lato-regular.woff2" as="font">
+    <link rel="preload" href="fonts/neris-light.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page">
+    <div style="display: none">
+      <svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-toggle-dropdown" viewbox="-1.051 -1.051 45.102 45.102"><path d="M12.558 23.71l8.674-8.64 8.674 8.64"></path><ellipse cx="21.5" cy="21.344" rx="20.5" ry="20.344"></ellipse></symbol></svg>
+    </div>
+    <h1 class="visually-hidden">Здоровая еда Елены Малышевой</h1>
+    <header class="page__header main-header">
+      <div class="main-header__inner">
+        <div class="main-header__callback">
+          <p class="main-header__phone">+7 495 678 47 54</p>
+          <a class="main-header__callback-link" href="#">обратный звонок</a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </div>
+        <a class="main-header__logo logo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1230px)" srcset="img/logo-1@1x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-1@1x.webp">
+            <source type="image/webp" srcset="img/logo-1@1x.webp">
+            <source media="(min-width: 1230px)" srcset="img/logo-1@1x.png">
+            <source media="(min-width: 768px)" srcset="img/logo-1@1x.png">
+            <img class="logo__image" src="img/logo-1@1x.png" alt="Здоровая еда Елены Малышевой">
+          </picture>
+        </a>
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list main-nav__list--cabinet">
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--cabinet" href="registration.html">Личный кабинет</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--orders" href="my-orders.html">Мои заказы</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cabinet">
+              <a class="main-nav__link main-nav__link--cart" href="cart.html">Корзина</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--site">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="sets.html">Выбрать набор</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О компании</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#what-is-it">Что это такое?</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Почему мы?</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#question">Вопрос-ответ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__contacts short-contacts">
+          <p class="short-contacts__phone short-contacts__phone--header">+7 495 678 47 54</p>
+          <p class="short-contacts__worktime short-contacts__worktime--header">Ежедневно с 10:00 до 22:00</p>
+          <a class="short-contacts__link-email short-contacts__link-email--header" href="mailto:test@yandex.ru">Написать сообщение</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page__main-slider main-slider">
+        <h2 class="visually-hidden">Основные предложения</h2>
+        <div class="owl-carousel carousel js-main-slider">
+          <div class="main-slider__item main-slider__item--basic-set">
+            <div class="main-slider__inner">
+              <p class="main-slider__item-title main-slider__item-title--basic">Ешьте! Наслаждайтесь! Будьте здоровы!</p>
+              <p class="main-slider__item-text">Удерживайте вес в норме или худейте, если у вас есть лишний вес</p>
+              <a class="main-slider__btn btn btn--red" href="#">Заказать набор еды!</a>
+            </div>
+          </div>
+          <div class="main-slider__item main-slider__item--personal-set">
+            <div class="main-slider__inner">
+              <p class="main-slider__item-title main-slider__item-title--personal">Персональные наборы с уникальной комбинацией блюд</p>
+              <p class="main-slider__item-text">Выберите для себя именно то, что вы любите есть. Чтобы каждый прием пищи был в удовольствие.</p>
+              <a class="main-slider__btn btn btn--red" href="#">Заказать набор еды!</a>
+            </div>
+          </div>
+          <div class="main-slider__item main-slider__item--child-set">
+            <div class="main-slider__inner">
+              <p class="main-slider__item-title main-slider__item-title--child">Здоровая еда для&nbsp;ребенка - это залог правильного развития!</p>
+              <p class="main-slider__item-text">Здоровое питание для вас и ваших детей с доставкой на дом!</p>
+              <a class="main-slider__btn btn btn--red" href="#">Заказать набор еды!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__choosing choosing-programs" id="choosing-meal-program">
+        <div class="choosing-programs__inner">
+          <h2 class="choosing-programs__heading heading heading--center heading--big">Выбери подходящую программу питания</h2>
+          <div class="meal-programs owl-carousel carousel">
+
+            <div class="meal-programs__item">
+              <h3 class="meal-programs__heading meal-programs__heading--basic heading">Стандартный набор здоровой еды</h3>
+              <ul class="meal-programs__fields" role="none">
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Период">
+                    <select class="meal-programs__select field field--select" name="period">
+                      <option value="one-week">1 неделя</option>
+                      <option value="two-weeks">2 недели</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Каллорийность дня">
+                    <select class="meal-programs__select field field--select" name="calorific">
+                      <option value="man-1500kk">Мужской (1500 Ккал)</option>
+                      <option value="woman-1200kk">Женский (1200 Ккал)</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Тип меню">
+                    <select class="meal-programs__select field field--select" name="menu-type">
+                      <option value="easy">Меню «Легкое»</option>
+                      <option value="nutritious">Меню «Питательное»</option>
+                      <option value="various">Меню «Разнообразное»</option>
+                      <option value="exquisite">Меню «Изысканное»</option>
+                    </select>
+                  </label>
+                </li>
+              </ul>
+              <p class="meal-programs__item-text">Стандартный набор здоровой еды - это уже готовый набор. Мы сами подобрали для вас блюда на каждый день. Вы получите набор сбалансированного питания. Выберите продолжительность, каллорийность и тип меню.</p>
+              <div class="meal-programs__item-footer">
+                <p class="meal-programs__item-price">
+                  <span class="meal-programs__item-price-text">Стоимость набора:</span>
+                  <span class="meal-programs__item-price-num"> 14 200 р.</span>
+                </p>
+                <a class="meal-programs__button btn btn--green" href="#">Посмотреть меню</a>
+                <a class="meal-programs__button btn btn--red" href="#">В корзину</a>
+              </div>
+            </div>
+
+            <div class="meal-programs__item">
+              <h3 class="meal-programs__heading meal-programs__heading--personal heading">Персональный набор здоровой еды</h3>
+              <ul class="meal-programs__fields" role="none">
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Период">
+                    <select class="meal-programs__select field field--select" name="period">
+                      <option value="one-week">1 неделя</option>
+                      <option value="two-weeks">2 недели</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Каллорийность дня">
+                    <select class="meal-programs__select field field--select" name="calorific">
+                      <option value="man-1500kk">Мужской (1500 Ккал)</option>
+                      <option value="woman-1200kk">Женский (1200 Ккал)</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Тип меню">
+                    <select class="meal-programs__select field field--select" name="menu-type">
+                      <option value="easy">Меню «Легкое»</option>
+                      <option value="nutritious">Меню «Питательное»</option>
+                      <option value="various">Меню «Разнообразное»</option>
+                      <option value="exquisite">Меню «Изысканное»</option>
+                    </select>
+                  </label>
+                </li>
+              </ul>
+              <p class="meal-programs__item-text">Стандартный набор здоровой еды - это уже готовый набор. Мы сами подобрали для вас блюда на каждый день. Вы получите набор сбалансированного питания. Выберите продолжительность, каллорийность и тип меню.</p>
+              <div class="meal-programs__item-footer">
+                <p class="meal-programs__item-price">
+                  <span class="meal-programs__item-price-text">Стоимость набора:</span>
+                  <span class="meal-programs__item-price-num"> 14 200 р.</span>
+                </p>
+                <a class="meal-programs__button btn btn--green" href="#">Редактировать меню</a>
+                <a class="meal-programs__button btn btn--red" href="#">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="food-preparation">
+        <div class="food-preparation__inner">
+          <h2 class="food-preparation__heading heading heading--center heading--big">Вот так мы готовим нашу еду!</h2>
+          <video class="food-preparation__video" poster="img/poster.jpg">
+            <source src="video/videofile.ogv" type="video/ogg; codecs='theora, vorbis'">
+            <source src="video/videofile.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'">
+            <source src="video/videofile.webm" type="video/webm; codecs='vp8, vorbis'">
+            Элемент video не поддерживается вашим браузером. <a href="video/videofile.mp4">Скачайте видео</a>.
+          </video>
+        </div>
+      </section>
+      <section class="page__features features">
+        <section class="features__item features__item--green" id="what-is-it">
+          <div class="features__inner">
+            <div class="features__content">
+              <h2 class="features__heading heading heading--big">Что это такое?</h2>
+              <p class="features__text">
+                Программы разработаны Еленой Малышевой на основании мировых стандартов и требований Всемирной Организации Здравоохранения. Уже 5 лет существует «Диета Елены Малышевой». С ней успешно похудели 180 000 человек. Теперь у вас есть возможность не только худеть, но и удобно, вкусно, недорого и полезно для здоровья поддерживать вес.
+              </p>
+              <a class="features__button btn btn--green" href="#">Выбрать программу</a>
+            </div>
+          </div>
+        </section>
+        <section class="features__item features__item--blue">
+          <div class="features__inner features__inner--blue">
+            <div class="features__content features__content--right">
+              <h2 class="features__heading heading heading--blue heading--big">Доказано Наукой</h2>
+              <p class="features__text">
+                Качество еды – это главное и для производителя, и для покупателя. Мы готовим наши блюда только из качественных и экологически чистых продуктов. Производство соответствует строгим стандартам, при приготовлении блюд неизменно соблюдаются технологии. Содержание сахара, соли и жиров в наших блюдах снижено.
+              </p>
+              <a class="features__button btn btn--blue" href="#">Выбрать программу</a>
+            </div>
+          </div>
+        </section>
+        <section class="features__item features__item--orange">
+          <div class="features__inner features__inner--orange">
+            <div class="features__content">
+              <h2 class="features__heading heading heading--orange heading--big">Высокое Качество</h2>
+              <p class="features__text">
+                Еда для вас производиться на крупном пищевом предприятии с соблюдением всех требований. Для приготовления блюд используется только качественные и экологически чистые продукты. Мы доставляем еду в замороженном виде. Для доставки используются только автомобили-рефрижераторы. Еда в дороге не размораживается.
+              </p>
+              <a class="features__button btn btn--orange" href="#">Выбрать программу</a>
+            </div>
+          </div>
+        </section>
+        <section class="features__item features__item--pink">
+          <div class="features__inner features__inner--pink">
+            <div class="features__content features__content--right">
+              <h2 class="features__heading heading heading--pink heading--big">Удобно и вкусно</h2>
+              <p class="features__text">
+                Вы экономите деньги - один прием пищи дешевле 200 рублей. Вы бережете свое время - вам не нужно больше ходить в магазин, готовить и считать калории. Мы все сдлелаи за вас. Вы принимаете доставку 1 раз в неделю и вкусную еду, полезную для здоровья. В течении дня у вас будет 5 приемов пищи, вне зависимости от того, какую программу вы выберете.
+              </p>
+              <a class="features__button btn btn--pink" href="#">Выбрать программу</a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="food-preparation">
+        <div class="food-preparation__inner">
+          <h2 class="food-preparation__heading heading heading--center heading--big">Вот так мы готовим нашу еду!</h2>
+          <div class="food-preparation__carousel owl-carousel carousel">
+            <div class="food-preparation__item">
+              <picture>
+                <source type="image/webp" srcset="img/home/photo-1.png">
+                <img class="food-preparation__image" src="img/home/photo-1.png" alt="Обжарка овощей">
+              </picture>
+            </div>
+            <div class="food-preparation__item">
+              <picture>
+                <source type="image/webp" srcset="img/home/photo-2.png">
+                <img class="food-preparation__image" src="img/home/photo-2.png" alt="Как мы жарим рыбу">
+              </picture>
+            </div>
+            <div class="food-preparation__item">
+              <picture>
+                <source type="image/webp" srcset="img/home/photo-3.png">
+                <img class="food-preparation__image" src="img/home/photo-3.png" alt="Как работают наши повара">
+              </picture>
+            </div>
+            <div class="food-preparation__item">
+              <picture>
+                <source type="image/webp" srcset="img/home/photo-1.png">
+                <img class="food-preparation__image" src="img/home/photo-1.png" alt="Жарим овощи">
+              </picture>
+            </div>
+            <div class="food-preparation__item">
+              <picture>
+                <source type="image/webp" srcset="img/home/photo-2.png">
+                <img class="food-preparation__image" src="img/home/photo-2.png" alt="Жареная рыба">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__choosing choosing-programs">
+        <div class="choosing-programs__inner">
+          <h2 class="choosing-programs__heading heading heading--center heading--big">Выбери подходящую программу питания</h2>
+          <div class="meal-programs owl-carousel carousel">
+
+            <div class="meal-programs__item">
+              <h3 class="meal-programs__heading meal-programs__heading--basic heading">Стандартный набор здоровой еды</h3>
+              <ul class="meal-programs__fields" role="none">
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Период">
+                    <select class="meal-programs__select field field--select" name="period">
+                      <option value="one-week">1 неделя</option>
+                      <option value="two-weeks">2 недели</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Каллорийность дня">
+                    <select class="meal-programs__select field field--select" name="calorific">
+                      <option value="man-1500kk">Мужской (1500 Ккал)</option>
+                      <option value="woman-1200kk">Женский (1200 Ккал)</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Тип меню">
+                    <select class="meal-programs__select field field--select" name="menu-type">
+                      <option value="easy">Меню «Легкое»</option>
+                      <option value="nutritious">Меню «Питательное»</option>
+                      <option value="various">Меню «Разнообразное»</option>
+                      <option value="exquisite">Меню «Изысканное»</option>
+                    </select>
+                  </label>
+                </li>
+              </ul>
+              <p class="meal-programs__item-text">Стандартный набор здоровой еды - это уже готовый набор. Мы сами подобрали для вас блюда на каждый день. Вы получите набор сбалансированного питания. Выберите продолжительность, каллорийность и тип меню.</p>
+              <div class="meal-programs__item-footer">
+                <p class="meal-programs__item-price">
+                  <span class="meal-programs__item-price-text">Стоимость набора:</span>
+                  <span class="meal-programs__item-price-num"> 14 200 р.</span>
+                </p>
+                <a class="meal-programs__button btn btn--green" href="#">Посмотреть меню</a>
+                <a class="meal-programs__button btn btn--red" href="#">В корзину</a>
+              </div>
+            </div>
+
+            <div class="meal-programs__item">
+              <h3 class="meal-programs__heading meal-programs__heading--personal heading">Персональный набор здоровой еды</h3>
+              <ul class="meal-programs__fields" role="none">
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Период">
+                    <select class="meal-programs__select field field--select" name="period">
+                      <option value="one-week">1 неделя</option>
+                      <option value="two-weeks">2 недели</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Каллорийность дня">
+                    <select class="meal-programs__select field field--select" name="calorific">
+                      <option value="man-1500kk">Мужской (1500 Ккал)</option>
+                      <option value="woman-1200kk">Женский (1200 Ккал)</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="meal-programs__field-wrapper">
+                  <label class="meal-programs__label" aria-label="Тип меню">
+                    <select class="meal-programs__select field field--select" name="menu-type">
+                      <option value="easy">Меню «Легкое»</option>
+                      <option value="nutritious">Меню «Питательное»</option>
+                      <option value="various">Меню «Разнообразное»</option>
+                      <option value="exquisite">Меню «Изысканное»</option>
+                    </select>
+                  </label>
+                </li>
+              </ul>
+              <p class="meal-programs__item-text">Стандартный набор здоровой еды - это уже готовый набор. Мы сами подобрали для вас блюда на каждый день. Вы получите набор сбалансированного питания. Выберите продолжительность, каллорийность и тип меню.</p>
+              <div class="meal-programs__item-footer">
+                <p class="meal-programs__item-price">
+                  <span class="meal-programs__item-price-text">Стоимость набора:</span>
+                  <span class="meal-programs__item-price-num"> 14 200 р.</span>
+                </p>
+                <a class="meal-programs__button btn btn--green" href="#">Редактировать меню</a>
+                <a class="meal-programs__button btn btn--red" href="#">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions" id="question">
+        <div class="questions__inner">
+          <h2 class="questions__heading heading heading--big heading--center">Частые вопросы</h2>
+          <div class="questions__panel-group">
+            <h3 class="questions__panel-title">Как хранить еду, которую мне привезут?</h3>
+            <div class="questions__panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit vel, eius. Non cum eum exercitationem, maiores nam iure nisi pariatur, voluptatum voluptas. Temporibus hic odit unde, aut possimus nostrum quasi.
+            </div>
+            <h3 class="questions__panel-title questions__panel-title--active">Можно ли менять местами приёмы в течении дня?</h3>
+            <div class="questions__panel-body">
+              Эта программа поможет вам быстро прийти к цели в снижении массы тела. Уже на первой неделе появляются результаты — за курс вы сбрасываете до 5 кг!  Эффективность программы заключается в сокращении общей калорийности. Так организм использует для работы энергию из жировых запасов.
+            </div>
+            <h3 class="questions__panel-title">Есть ли в меню десерты?</h3>
+            <div class="questions__panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dicta facilis magnam asperiores voluptatibus tempora vel ipsa facere aspernatur, provident exercitationem omnis, alias debitis maiores doloribus quidem, assumenda cupiditate accusantium.
+            </div>
+            <h3 class="questions__panel-title">Если еда замороженная, как происходит доставка?</h3>
+            <div class="questions__panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cum neque esse animi voluptatibus? Sequi quam nihil ab ipsum, nesciunt accusantium veniam aliquid, laboriosam incidunt quibusdam expedita quos, ullam aliquam?
+            </div>
+            <h3 class="questions__panel-title">Можно ли разнообразить меню?</h3>
+            <div class="questions__panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus adipisci earum quaerat quibusdam! Labore delectus eos, blanditiis quidem, repellat magni asperiores, tempore alias excepturi enim fugit illo doloremque rem provident.
+            </div>
+            <h3 class="questions__panel-title">Что делать, если у меня аллергия на некоторые продукты?</h3>
+            <div class="questions__panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut tempora est eveniet beatae, adipisci quibusdam, voluptatum dignissimos vero molestias sunt expedita, laborum architecto reprehenderit nam necessitatibus eligendi libero dolore reiciendis!
+            </div>
+            <h3 class="questions__panel-title">Могу ли я похудеть, если я буду питаться такой едой?</h3>
+            <div class="questions__panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ullam, eius. Excepturi eligendi asperiores quam sunt laudantium quisquam blanditiis similique fugiat, alias repudiandae, sed nihil. At accusantium, maxime tenetur eius.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__callback callback">
+        <div class="callback__inner">
+          <h2 class="callback__heading heading heading--big heading--center">Остались вопросы?</h2>
+          <p class="callback__text">
+            Оставьте свой телефон, мы перезвоним вам в течение 15 минут!
+          </p>
+          <form class="callback__form" action="#" method="post">
+            <label class="callback__label" aria-label="Ваше имя?">
+              <input class="callback__field field" type="text" name="name" placeholder="Ваше имя?">
+            </label>
+            <label class="callback__label" aria-label="Номер телефона">
+              <input class="callback__field field" type="tel" name="phone" placeholder="Номер телефона">
+            </label>
+            <button class="callback__button btn btn--red" type="submit">Перезвоните мне!</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer main-footer">
+      <div class="main-footer__inner">
+        <a class="main-footer__logo logo">
+          <picture>
+            <source type="image/webp" srcset="img/logo-1@1x.webp">
+            <img class="logo__image logo__image--footer" src="img/logo-1@1x.png" alt="Логотип Есть здорово">
+          </picture>
+        </a>
+        <div class="main-footer__menu">
+          <p class="main-footer__title">О здоровой еде</p>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Что это такое?</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Почему мы?</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Вопрос ответ</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">О компании</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__menu">
+          <p class="main-footer__title">Выберите и закажите</p>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Базовый набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Персональный набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Детский набор</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__short-contacts short-contacts">
+          <p class="main-footer__title main-footer__title--contacts">Свяжитесь с нами</p>
+          <p class="short-contacts__phone">+7 495 678 47 54</p>
+          <p class="short-contacts__worktime">Ежедневно с 10:00 до 22:00</p>
+          <a class="short-contacts__link-email" href="mailto:test@yandex.ru">Написать сообщение</a>
+        </div>
+        <p class="main-footer__copyright">Все права защищены. © 2018</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(".js-main-slider").owlCarousel({
+          loop:true,
+          dots:true,
+          nav:true,
+          margin:0,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  nav:false
+              },
+              768:{
+                  items:1,
+                  nav:true
+              },
+              1000:{
+                  items:1,
+                  nav:true,
+                  loop:false
+              }
+          }
+      });
+      $(".meal-programs").owlCarousel({
+          loop:false,
+          dots:true,
+          nav:true,
+          margin:0,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  dots:true,
+                  nav:false
+              },
+              768:{
+                  items:1,
+                  dots:true,
+                  nav:true
+              },
+              1230:{
+                  items:2,
+                  dots:false,
+                  nav:false
+              }
+          }
+      });
+      $(".food-preparation__carousel").owlCarousel({
+          loop:false,
+          dots:true,
+          nav:true,
+          margin:20,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  dots:true,
+                  nav:false
+              },
+              768:{
+                  items:2,
+                  dots:true,
+                  nav:false
+              },
+              1230:{
+                  items:3,
+                  dots:true,
+                  nav:true
+              }
+          }
+      });
+
+      var panelItem = document.querySelectorAll(".questions__panel-title"),
+          active = document.getElementsByClassName("questions__panel-title--active");
+
+      Array.from(panelItem).forEach(function(item, i, panelItem) {
+        item.addEventListener('click', function(e) {
+          if (active.length > 0 && active[0] !== this) // если есть активный элемент, и это не тот по которому кликнули
+            active[0].classList.remove("questions__panel-title--active"); // убрать класс panel-active
+
+          // изменить состояние класса panel-active на текущем элементе: добавить если не было, убрать если было.
+          this.classList.toggle("questions__panel-title--active");
+        });
+      });
+
+
+      $(function(){
+        $("a[href^='#']").click(function(){
+          var _href = $(this).attr("href");
+          $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+          return false;
+        });
+      });
+
+    </script>
+  </body>
+</html>
