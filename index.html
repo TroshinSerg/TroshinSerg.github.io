@@ -4,17 +4,24 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Трошин Сергей - примеры работ</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body class="page">
   <article class="article page__article">
-    <h1 class="heading">Примеры работ</h1>
+    <h1 class="visually-hidden">Портфолио Трошина Сергея</h1>
+    <p class="article__text">Привет! Меня зовут Трошин Сергей, я верстальщик, выпускник HTML Academy. Успешно закончил два интенсива и профессионально занимаюсь версткой, постоянно развиваюсь в направлении фронтенда. На данный момент работаю в компании ООО «Диета Елены Малышевой» верстальщиком. Сейчас в мои обязанности входит поддержка и верстка адаптивных кроссбраузерных страниц сайтов для продуктов компании.</p>
+    <p class="article__text">Я люблю заниматься версткой поэтому свою работу стараюсь делать максимально отвечающей критериям качества, которые считаются актуальными на рынке в настоящий момент.</p>
+    <h2 class="heading">Примеры работ</h2>
     <ul class="works">
       <li class="works__item">
         <h2 class="works__title">Техномарт</h2>
         <div class="works__image-wrapper">
-          <img class="works__image" src="img/technomart-preview.jpg" width="636" height="360" alt="Фото проекта отсутствует">
+          <picture>
+            <source type="image/webp" srcset="img/technomart-preview.webp 1x, img/technomart-preview.webp 2x">
+            <img class="works__image" src="img/technomart-preview.jpg" srcset="img/technomart-preview.jpg 2x" alt="Скриншот главной страницы макета Техномарт">
+          </picture>    
         </div>
         <p class="works__text">Фиксированный макет интернет-магазина</p>
         <ul class="works__links">
@@ -29,7 +36,10 @@
       <li class="works__item">
         <h2 class="works__title">Пинк</h2>
         <div class="works__image-wrapper">
-          <img class="works__image" src="img/pink-preview.jpg" width="1288" height="677" alt="Фото проекта отсутствует">
+          <picture>
+            <source type="image/webp" srcset="img/pink-preview.webp 1x, img/pink-preview.webp 2x">
+            <img class="works__image" src="img/pink-preview.jpg" srcset="img/pink-preview.jpg 2x" alt="Скриншот главной страницы макета Пинк">
+          </picture>
         </div>
         <p class="works__text">Адаптивный макет мобильного приложения</p>
         <ul class="works__links">
@@ -47,7 +57,10 @@
       <li class="works__item">
         <h2 class="works__title">Диета Малышевой</h2>
         <div class="works__image-wrapper">
-          <img class="works__image" src="img/zdorovo-index.png" width="650" height="450" alt="Скриншот главной страницы макета">
+          <picture>
+            <source type="image/webp" srcset="img/zdorovo-preview.webp 1x, img/zdorovo-preview.webp 2x">
+            <img class="works__image" src="img/zdorovo-preview.jpg" srcset="img/zdorovo-preview.jpg 2x" alt="Скриншот главной страницы макета Здоровая еда Елены Малышевой">
+          </picture>
         </div>
         <p class="works__text">Адаптивный макет интернет магазина диет</p>
         <ul class="works__links">
@@ -66,8 +79,6 @@
         </ul>
       </li>
     </ul>
-  </article> 
-
-  
+  </article>
 </body>
 </html>
