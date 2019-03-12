@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог ру электрик</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body class="page">
+    <div style="display: none">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-menu-cross" viewbox="0 0 23.867 23.867"><path fill="#444" d="M15.087 11.933l8.56-8.559a.75.75 0 0 0 0-1.061L21.554.22a.747.747 0 0 0-1.06 0l-8.561 8.56L3.373.22a.771.771 0 0 0-1.061 0L.22 2.313a.75.75 0 0 0 0 1.061l8.56 8.559-8.56 8.559a.751.751 0 0 0 0 1.062l2.093 2.094a.744.744 0 0 0 1.06 0l8.561-8.56 8.56 8.56a.746.746 0 0 0 1.06 0l2.093-2.094a.751.751 0 0 0 0-1.062l-8.56-8.559z"></path></symbol><symbol id="icon-menu-burger"><path fill="#FFF" d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"></path><path fill="#FFF" d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"></path></symbol></svg>
+    </div>
+    <div class="page__overlay"></div>
+    <header class="header">
+      <div class="header__inner">
+        <button class="header__toggle js-menu-toggle" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">О компании</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Бренд</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Оплата и доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="header__phone">
+          <a class="header__phone-link header__phone-link--mobile" href="tel:84957405702">8 (495) 740-57-02</a>
+          <a class="header__phone-link" href="tel:84957405702">8 (495) 740-57-02</a>
+        </p>
+        <ul class="header__worktime">
+          <li class="header__worktime-item">Пн - Пт с 9 до 18</li>
+          <li class="header__worktime-item">Сб - Вс выходной</li>
+        </ul>
+        <ul class="header__user-nav user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--cart" href="#">
+              <span class="user-nav__product-amount">356 товаров</span>
+              <span class="user-nav__price">200000 руб.</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--login" href="#">
+              <span class="user-nav__text">Войти</span>
+            </a>
+          </li>
+        </ul>
+        <form class="header__form search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label aria-label="поиск по сайту">
+            <input class="search-form__field" type="search" name="search" placeholder="Поиск">
+          </label>
+        </form>
+      </div>
+
+      <section class="canvas-menu">
+        <a class="canvas-menu__logo logo" href="index.html">
+          <picture>
+            <source type="image/webp" srcset="img/logotip.webp">
+            <img class="logo__image" src="img/logotip.jpg" alt="Логотип компании руэлектрик">
+          </picture>
+        </a>
+        <button class="canvas-menu__close js-menu-close" type="button">
+          <svg class="canvas-menu__icon" width="15" height="15" role="presentation">
+            <use xlink:href="#icon-menu-cross"></use>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <ul class="canvas-menu__catalog catalog-nav">
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link catalog-nav__link--current">Главная</a>
+          </li>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link" href="#">О компании</a>
+          </li>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link" href="#">Каталог</a>
+            <ul class="catalog-nav__sub-list">
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-1" href="#">Лампы (источники света)</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-2" href="#">Светотехнические изделия</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-3" href="#">Кабельно-проводниковая продукция</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-4" href="#">Электро-установочные изделия</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-5" href="#">Модульное оборудование</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-6" href="#">Шкафы, щиты, боксы и аксессуары</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-7" href="#">Монтажные изделия</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-8" href="#">Кабеленесущие системы</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-9" href="#">Высоковольтное оборудование</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-10" href="#">Приборы учета</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-11" href="#">Инструмент</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--ico-12" href="#">Напольные системы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link" href="#">Бренды</a>
+          </li>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <main>
+
+      <!--<article class="page__catalog catalog">-->
+      <article class="page__content-area content-area">
+        <aside class="content-area__aside aside">
+          <a class="aside__logo logo" href="index.html">
+            <picture>
+              <source type="image/webp" srcset="img/logotip.webp">
+              <img class="logo__image" src="img/logotip.jpg" alt="Логоти компании руэлектрик">
+            </picture>
+          </a>
+          <ul class="aside__nav catalog-nav">
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-1" href="#">Лампы (источники света)</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-2" href="#">Светотехнические изделия</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-3" href="#">Кабельно-проводниковая продукция</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-4" href="#">Электро-установочные изделия</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-5" href="#">Модульное оборудование</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-6" href="#">Шкафы, щиты, боксы и аксессуары</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-7" href="#">Монтажные изделия</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-8" href="#">Кабеленесущие системы</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-9" href="#">Высоковольтное оборудование</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-10" href="#">Приборы учета</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-11" href="#">Инструмент</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link catalog-nav__link--ico-12" href="#">Напольные системы</a>
+            </li>
+          </ul>
+        </aside>
+        <!--<div class="catalog__content">-->
+        <div class="content-area__entry">
+          <ul class="content-area__breadcrumbs breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--current">Каталог</a>
+            </li>
+          </ul>
+          <h1 class="content-area__heading heading">Каталог</h1>
+          <ul class="content-area__products products">
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Светильник ЛПО-05-2х18-021 OPL опал IP20</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-1.jpg" width="260" height="190" alt="Светильник ЛПО-05-2х18-021 OPL опал IP20">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">1 414,40 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+              <span class="products__item-flag">новинка</span>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Пускатель магнитный 9А катушка управления 220В AC 2.5-4А</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-2.jpg" width="260" height="190" alt="Пускатель магнитный 9А катушка управления 220В AC 2.5-4А">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">9 439,20 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+              <span class="products__item-flag">новинка</span>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Светильник ЛПО-05-2х18-021 OPL опал IP20</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-1.jpg" width="260" height="190" alt="Светильник ЛПО-05-2х18-021 OPL опал IP20">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">1 414,40 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+              <span class="products__item-flag">новинка</span>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Пускатель магнитный 9А катушка управления 220В AC 2.5-4А</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-2.jpg" width="260" height="190" alt="Пускатель магнитный 9А катушка управления 220В AC 2.5-4А">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">9 439,20 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+              <span class="products__item-flag">новинка</span>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Светильник ЛПО-05-2х18-021 OPL опал IP20</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-1.jpg" width="260" height="190" alt="Светильник ЛПО-05-2х18-021 OPL опал IP20">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">1 414,40 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Пускатель магнитный 9А катушка управления 220В AC 2.5-4А</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-2.jpg" width="260" height="190" alt="Пускатель магнитный 9А катушка управления 220В AC 2.5-4А">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">9 439,20 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+              <span class="products__item-flag">новинка</span>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Светильник ЛПО-05-2х18-021 OPL опал IP20</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-1.jpg" width="260" height="190" alt="Светильник ЛПО-05-2х18-021 OPL опал IP20">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">1 414,40 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Пускатель магнитный 9А катушка управления 220В AC 2.5-4А</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-2.jpg" width="260" height="190" alt="Пускатель магнитный 9А катушка управления 220В AC 2.5-4А">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">9 439,20 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+              <span class="products__item-flag">новинка</span>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Светильник ЛПО-05-2х18-021 OPL опал IP20</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-1.jpg" width="260" height="190" alt="Светильник ЛПО-05-2х18-021 OPL опал IP20">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">1 414,40 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Пускатель магнитный 9А катушка управления 220В AC 2.5-4А</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-2.jpg" width="260" height="190" alt="Пускатель магнитный 9А катушка управления 220В AC 2.5-4А">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">9 439,20 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Светильник ЛПО-05-2х18-021 OPL опал IP20</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-1.jpg" width="260" height="190" alt="Светильник ЛПО-05-2х18-021 OPL опал IP20">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">1 414,40 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="products__item">
+              <h3 class="products__item-title">
+                <a class="products__item-link" href="#">Пускатель магнитный 9А катушка управления 220В AC 2.5-4А</a>
+              </h3>
+              <div class="products__image-wrapper">
+                <img class="products__image" src="img/product-image-2.jpg" width="260" height="190" alt="Пускатель магнитный 9А катушка управления 220В AC 2.5-4А">
+              </div>
+              <div class="products__item-footer">
+                <span class="products__item-price">9 439,20 р</span>
+                <a class="products__item-btn" href="#">В корзину</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="pagination">
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--current">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">5</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__contacts">
+          <a class="footer__logo logo" href="index.html">
+            <img class="logo__image logo__image--footer" src="img/logo-footer.png" width="231" height="42" alt="Лого руэлектрик">
+          </a>
+          <ul class="footer__contacts-list">
+            <li class="footer__contacts-item">
+              ул. Космонавтов 18, корпус 2, Москва, Россия
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-link" href="tel:84957405702">8 495 740 57 02</a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-link" href="mailto:info@ruelectric.com">info@ruelectric.com</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">О компании</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Бренды</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__catalog">
+          <p class="footer__catalog-title">Каталог</p>
+          <ul class="footer__catalog-list">
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Лампы (источники света)</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Светотехника</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Кабель, провод</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Кабеленесущие системы (системы для прокладки кабеля)</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Электроустановочные изделия</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Низковольтное оборудование</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Щиты и шкафы, шинопровод</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Разъемы</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Инструмент, измерительные приборы и средства защиты</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Оборудование для молниезащиты и заземления</a>
+            </li>
+            <li class="footer__catalog-item">
+              <a class="footer__catalog-link" href="#">Высоковольтное оборудование</a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">
+          © 2019 - ООО "РУЭЛЕКТРИК"<br>
+          Все права защищены, полное или частичное копирование материала запрещено.
+        </p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      //коллапс меню
+      $("body").on("click", ".js-menu-toggle", function (evt) {
+        $(".canvas-menu").addClass("canvas-menu--opened");
+        $(".page__overlay").addClass("page__overlay--show");
+      });
+      $("body").on("click", ".js-menu-close, .page__overlay", function (evt) {
+        $(".canvas-menu").removeClass("canvas-menu--opened");
+        $(".page__overlay").removeClass("page__overlay--show");
+      });
+    </script>
+  </body>
+  
+</html>
